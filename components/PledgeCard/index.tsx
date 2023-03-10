@@ -69,9 +69,8 @@ const PledgeCard = ({ campaignData }: PledgeCardProps) => {
 			<div className={styles.PledgeCard__buttons}>
 				<button
 					className={`${styles.PledgeCard__buttons__button} ${styles["PledgeCard__buttons__button--outline"]}`}
-				>
-					Top Up
-				</button>
+					data-size="Top Up"
+				></button>
 				<button className={styles.PledgeCard__buttons__button}>Redeem</button>
 			</div>
 		</div>

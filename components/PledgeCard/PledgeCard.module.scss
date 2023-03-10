@@ -78,10 +78,11 @@
 			border: 0;
 			color: #fcfcfd;
 			cursor: pointer;
+			z-index: 1;
 
 			&--outline {
 				// background: transparent;
-				background: linear-gradient(to right, #00ffa3, #dc1fff);
+				background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
 				color: #328be0;
 				position: relative;
 
@@ -93,6 +94,19 @@
 					bottom: 1px;
 					left: 1px;
 					background-color: white;
+					border-radius: 68px;
+					z-index: -1;
+				}
+				&::after {
+					content: attr(data-size);
+					font-weight: 700;
+					font-size: 13.7584px;
+					line-height: 13px;
+					background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
+					color: transparent;
+					background-clip: text;
+					-webkit-background-clip: text;
+					color: transparent;
 				}
 			}
 		}
