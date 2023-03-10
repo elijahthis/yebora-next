@@ -1,0 +1,56 @@
+.AllCampaigns {
+	&__top {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 36px 7.78vw;
+
+		h3 {
+			font-weight: 600;
+		}
+	}
+
+	&__banner {
+		margin-bottom: 42px;
+	}
+
+	&__body {
+		padding: 14px 7.78vw;
+	}
+
+	&__sortBy {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.75rem;
+		margin-bottom: 26px;
+	}
+}
+
+.campaign {
+	margin-bottom: 48px;
+	&__title {
+		margin-bottom: 1rem;
+	}
+
+	&__content {
+		min-height: 500px;
+		display: grid;
+
+		.campaignCards {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			height: max-content;
+		}
+	}
+
+	&__more {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+}

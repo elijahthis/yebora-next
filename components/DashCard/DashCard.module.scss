@@ -1,0 +1,41 @@
+.DashCard {
+	// background: #242424;
+	background: url(../../images/dash-card-bg.svg) no-repeat;
+	background-size: cover;
+	border-radius: 12px;
+	color: #ffffff;
+
+	padding: 76px 71px 73px 71px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 14px;
+
+	&__icon {
+		width: 54.34px;
+		height: 54.34px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+
+		svg {
+			width: 60%;
+			height: 60%;
+		}
+	}
+
+	&__value {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+	&__label {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		color: #bdbdbd;
+	}
+}

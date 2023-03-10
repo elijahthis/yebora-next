@@ -1,0 +1,85 @@
+.Header {
+	padding: 1.5rem 5.83vw;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+	background-color: #ffffff;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 30;
+
+	& > svg {
+		// width: 100px;
+		height: 32px;
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 4.93vw;
+
+		&__side {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 15px;
+
+			.line {
+				width: 1px;
+				height: 18.5px;
+				background-color: #91a0bb;
+			}
+			.profileBit {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 0.5rem;
+				color: #4e5d78;
+
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				font-family: "Poppins";
+				cursor: pointer;
+			}
+
+			& > :first-child {
+				svg {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
+
+.headerLinks {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 11px;
+
+	.linkItem {
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #777e91;
+
+		&--active {
+			color: #328be0;
+		}
+
+		li {
+			padding: 6px 12px;
+			list-style-type: none;
+		}
+	}
+}

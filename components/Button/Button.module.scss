@@ -1,0 +1,27 @@
+.Button {
+	cursor: pointer;
+	color: #ffffff;
+	border: 0;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 106.4%;
+	background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
+	font-family: "Poppins";
+
+	&--primary {
+		padding: 13.5px 30.5px;
+		border-radius: 31px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	&--fullWidth {
+		width: 100%;
+		padding: 1rem;
+		border-radius: 20px;
+	}
+}
+
+// .fullWid

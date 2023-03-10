@@ -1,0 +1,17 @@
+.AuthLayout {
+	padding: 56px;
+
+	&__topLogo {
+		display: flex;
+		& > * {
+			margin: 0 auto;
+		}
+	}
+
+	&__rest {
+		display: flex;
+		// align-items: center;
+		justify-content: center;
+		margin-top: 46px;
+	}
+}

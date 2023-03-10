@@ -1,0 +1,83 @@
+.CampaignCard {
+	background: #ffffff;
+	border: 1px solid #e6e8ec;
+	box-shadow: -4.76808px -4.76808px 95.3616px -95.3616px rgba(0, 0, 0, 0.03);
+	border-radius: 12px;
+
+	padding: 13px 14px;
+
+	&__image {
+		min-height: 133px;
+		position: relative;
+		margin-bottom: 1rem;
+		img {
+			border-radius: 5px;
+		}
+	}
+
+	&__tag {
+		margin-bottom: 0.5rem;
+
+		p {
+			font-weight: 500;
+			font-size: 10px;
+			line-height: 18px;
+			padding: 2px 8px;
+			border-radius: 16px;
+			width: max-content;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 21px;
+		color: #121528;
+		margin-bottom: 0.5rem;
+	}
+
+	&__desc {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 14px;
+		letter-spacing: 0.532018px;
+		color: #121528;
+		border-bottom: 1px solid #e6e8ec;
+
+		padding-bottom: 13px;
+		margin-bottom: 1rem;
+	}
+
+	&__spaceBetween {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 21px;
+		color: #71737e;
+	}
+
+	&__amountRaised {
+		font-weight: 600;
+
+		span {
+			font-weight: 700;
+			color: #121528;
+		}
+	}
+
+	&__time {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 4.75px;
+	}
+
+	&__progress {
+		margin-bottom: 0.5rem;
+		margin-top: 11px;
+	}
+}
