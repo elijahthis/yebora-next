@@ -104,8 +104,8 @@ export default function Home() {
 						/>
 					) : (
 						<div className={styles.campaignCards}>
-							{campaignList.map((campaignItem) => (
-								<CampaignCard campaignData={campaignItem} />
+							{campaignList.map((campaignItem, ind: number) => (
+								<CampaignCard campaignData={campaignItem} key={ind} />
 							))}
 						</div>
 					)}

@@ -80,8 +80,20 @@
 			cursor: pointer;
 
 			&--outline {
-				background: transparent;
+				// background: transparent;
+				background: linear-gradient(to right, #00ffa3, #dc1fff);
 				color: #328be0;
+				position: relative;
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 1px;
+					right: 1px;
+					bottom: 1px;
+					left: 1px;
+					background-color: white;
+				}
 			}
 		}
 	}

@@ -78,8 +78,8 @@ const AllCampaigns = () => {
 							/>
 						) : (
 							<div className={styles.campaignCards}>
-								{campaignList.map((campaignItem) => (
-									<CampaignCard campaignData={campaignItem} />
+								{campaignList.map((campaignItem, ind: number) => (
+									<CampaignCard campaignData={campaignItem} key={ind} />
 								))}
 							</div>
 						)}
@@ -95,8 +95,8 @@ const AllCampaigns = () => {
 							/>
 						) : (
 							<div className={styles.campaignCards}>
-								{campaignList.map((campaignItem) => (
-									<CampaignCard campaignData={campaignItem} />
+								{campaignList.map((campaignItem, ind: number) => (
+									<CampaignCard campaignData={campaignItem} key={ind} />
 								))}
 							</div>
 						)}

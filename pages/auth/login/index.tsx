@@ -42,11 +42,12 @@ const Login = () => {
 				<h3>Welcome Back</h3>
 				<p>Sign in to your account to continue</p>
 				<div className={styles.RegCard__actions}>
-					{socialList.map((socialItem) => (
+					{socialList.map((socialItem, ind) => (
 						<SocialButton
 							bg={socialItem.bg}
 							col={socialItem.col}
 							border={socialItem.border}
+							key={ind}
 						>
 							{socialItem.icon}
 							<p>{socialItem.label}</p>

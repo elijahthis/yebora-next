@@ -23,7 +23,7 @@ const Header = () => {
 			<Logo />
 			<div className={styles.Header__right}>
 				<ul className={styles.headerLinks}>
-					{headerLinks.map((linkItem) => (
+					{headerLinks.map((linkItem, ind) => (
 						<Link
 							href={linkItem.link}
 							className={`${styles.linkItem} ${
@@ -31,6 +31,7 @@ const Header = () => {
 									? styles["linkItem--active"]
 									: ""
 							}`}
+							key={ind}
 						>
 							<li>{linkItem.title}</li>
 						</Link>

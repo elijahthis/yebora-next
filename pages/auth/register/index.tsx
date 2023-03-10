@@ -39,11 +39,12 @@ const Register = () => {
 					Create your account today with us, this would only take few minutes
 				</p>
 				<div className={styles.RegCard__actions}>
-					{socialList.map((socialItem) => (
+					{socialList.map((socialItem, ind) => (
 						<SocialButton
 							bg={socialItem.bg}
 							col={socialItem.col}
 							border={socialItem.border}
+							key={ind}
 						>
 							{socialItem.icon}
 							<p>{socialItem.label}</p>

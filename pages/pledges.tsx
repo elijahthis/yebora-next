@@ -90,13 +90,14 @@ const Pledges = () => {
 				<h3>Pledges</h3>
 			</div>
 			<div className={styles.Pledges__cards}>
-				{pledgeDashCards.map((pledgeItem) => (
+				{pledgeDashCards.map((pledgeItem, ind) => (
 					<DashCardCol
 						icon={pledgeItem.icon}
 						value={pledgeItem.value}
 						label={pledgeItem.label}
 						bg={pledgeItem.bg}
 						money={pledgeItem.money}
+						key={ind}
 					/>
 				))}
 			</div>
@@ -125,8 +126,8 @@ const Pledges = () => {
 							/>
 						) : (
 							<div className={styles.pledgeCards}>
-								{pledgeList.map((campaignItem) => (
-									<PledgeCard campaignData={campaignItem} />
+								{pledgeList.map((campaignItem, ind) => (
+									<PledgeCard campaignData={campaignItem} key={ind} />
 								))}
 							</div>
 						)}
