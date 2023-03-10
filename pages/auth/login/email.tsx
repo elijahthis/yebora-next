@@ -71,7 +71,7 @@ const EmailLogin = () => {
 					Sign In
 				</Button>
 				<div className={styles.RegCard__already}>
-					Don't have an account? <Link href="/auth/register">Sign Up</Link>
+					Don&apos;t have an account? <Link href="/auth/register">Sign Up</Link>
 				</div>
 			</form>
 		</AuthLayout>
