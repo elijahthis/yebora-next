@@ -1,6 +1,7 @@
 import styles from "./TitleNav.module.scss";
 import { BiChevronRight } from "react-icons/bi";
 import { useRouter } from "next/router";
+import BackButton from "../BackButton";
 
 interface TitleNavProps {
 	title: string;
@@ -42,6 +43,7 @@ const TitleNav = ({
 					))}
 				</div>
 			)}
+			{variant === "back" && <BackButton link={backLink ?? "/"} />}
 		</div>
 	);
 };

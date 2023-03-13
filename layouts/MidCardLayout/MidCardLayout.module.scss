@@ -1,0 +1,22 @@
+.MidCardLayout {
+	&__titleNav {
+		margin-top: 85px;
+	}
+
+	&__body {
+		background: #ffffff;
+		padding: 42px 21.66vw;
+		.WhiteCard {
+			background: #ffffff;
+
+			box-shadow: -5px -5px 100px -100px rgba(0, 0, 0, 0.03),
+				5px 5px 100px 10px rgba(0, 0, 0, 0.03);
+			border-radius: 12px;
+
+			padding-top: 48px;
+			padding-left: 36px;
+			padding-right: 43px;
+			padding-bottom: 74px;
+		}
+	}
+}

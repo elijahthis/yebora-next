@@ -24,11 +24,11 @@ const MUIInput = ({
 		<label htmlFor="" className={styles.MUIInput}>
 			{showLabel && <div className={styles.MUIInput__label}>{label}</div>}
 			<TextField
-				error
+				// error
 				id="outlined-error-helper-text"
 				// label="Error"
 				value={value}
-				helperText="Incorrect entry."
+				// helperText="Incorrect entry."
 				placeholder={showLabel ? placeholder : label}
 				onChange={onChange}
 				style={{ width: "100%" }}

@@ -2,6 +2,7 @@ import { IoMdArrowForward } from "react-icons/io";
 import { WhitishEllipse } from "../svgs";
 import styles from "./CampaignTypeCard.module.scss";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 interface CampaignTypeCardProps {
 	cardData: {
@@ -15,7 +16,7 @@ interface CampaignTypeCardProps {
 
 const CampaignTypeCard = ({ cardData }: CampaignTypeCardProps) => {
 	const { title, desc, btnLink, illustration, bg } = cardData;
-
+	const router = useRouter();
 	return (
 		<div style={{ backgroundColor: bg }} className={styles.CampaignTypeCard}>
 			<div className={styles.CampaignTypeCard__illustration}>
@@ -32,7 +33,7 @@ const CampaignTypeCard = ({ cardData }: CampaignTypeCardProps) => {
 				<h2>{title}</h2>
 				<p>{desc}</p>
 				<div className={styles.btnWrap}>
-					<button>
+					<button onClick={() => router.push(btnLink)}>
 						<span>Get Started</span>
 						<IoMdArrowForward />
 					</button>

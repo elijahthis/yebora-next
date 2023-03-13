@@ -5,12 +5,11 @@ const Logo = () => {
 
 	return (
 		<svg
-			width="150"
-			height="50"
 			viewBox="0 0 150 50"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			onClick={() => router.push("/")}
+			style={{ cursor: "pointer" }}
 		>
 			<g clip-path="url(#clip0_7754_67837)">
 				<path
