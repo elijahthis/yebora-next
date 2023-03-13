@@ -6,10 +6,12 @@ import LoadMore from "@/components/LoadMore";
 import SortBy from "@/components/SortBy";
 import { EmptyCampaignIcon } from "@/components/svgs";
 import HomeLayout from "@/layouts/HomeLayout";
+import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import styles from "./styles/AllCampaigns.module.scss";
 
 const AllCampaigns = () => {
+	const router = useRouter();
 	const campaignList: {
 		image: string;
 		title: string;
@@ -59,7 +61,12 @@ const AllCampaigns = () => {
 		<div className={styles.AllCampaigns}>
 			<div className={styles.AllCampaigns__top}>
 				<h3>All Campaigns</h3>
-				<Button variant="primary">Create Campaign</Button>
+				<Button
+					variant="primary"
+					onClick={() => router.push("/campaigns/create")}
+				>
+					Create Campaign
+				</Button>
 			</div>
 			<div className={styles.AllCampaigns__banner}>
 				<Banner />

@@ -12,10 +12,13 @@ import { BanknoteIcon, EmptyCampaignIcon } from "@/components/svgs";
 import EmptyState from "@/components/EmptyState";
 import RoundTabs from "@/components/RoundTabs";
 import CampaignCard from "@/components/CampaignCard";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+	const router = useRouter();
+
 	const [currentPage, setCurrentPage] = useState(0);
 	const campaignList: {
 		image: string;
@@ -69,7 +72,12 @@ export default function Home() {
 					<h3>Welcome, Manuel Chucho! </h3>
 					<p>Let’s build a community filled with hope</p>
 				</div>
-				<Button variant="primary">Create Campaign</Button>
+				<Button
+					variant="primary"
+					onClick={() => router.push("/campaigns/create")}
+				>
+					Create Campaign
+				</Button>
 			</div>
 			<div className={styles.Home__banner}>
 				<TopBanner />
