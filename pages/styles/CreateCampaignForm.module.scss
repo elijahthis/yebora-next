@@ -5,4 +5,77 @@
 		color: #328be0;
 		margin-bottom: 60px;
 	}
+
+	&__bottomBit {
+		padding-top: 72px;
+		border-top: 1px solid #e4e7ec;
+
+		.allowOthers {
+			margin-top: 40px;
+			padding-bottom: 110px;
+			border-bottom: 1px solid #e4e7ec;
+
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 34px;
+
+			p {
+				color: #344054;
+			}
+		}
+	}
+}
+
+.doubleCol {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.FormWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 2rem;
+	padding-bottom: 72px;
+}
+
+.btnWrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 28px;
+}
+
+.radioWrap {
+	margin-bottom: 38px;
+}
+
+.campaignTarget {
+	h5 {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 32px;
+		color: #121528;
+		margin-bottom: 56px;
+	}
+
+	& > div {
+		padding-left: 58px;
+	}
+
+	&__info {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #344054;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+	}
 }

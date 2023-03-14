@@ -8,7 +8,7 @@ interface ButtonProps {
 	loading?: boolean;
 	disabled?: boolean;
 	type?: "button" | "submit" | "reset" | undefined;
-	variant?: "primary" | "fullWidth";
+	variant?: "primary" | "fullWidth" | "outline";
 }
 
 const Button = ({
