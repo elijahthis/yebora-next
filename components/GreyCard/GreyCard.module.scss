@@ -1,0 +1,19 @@
+.GreyCard {
+	background: #fafcff;
+	border: 1px solid #e6e7e7;
+	border-radius: 12px;
+
+	&__title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		padding: 11px 22px;
+		padding-bottom: 10px;
+	}
+
+	&__body {
+		padding: 12px 22px;
+		padding-bottom: 30px;
+	}
+}

@@ -613,3 +613,22 @@ export const FlareIcon = () => (
 		</defs>
 	</svg>
 );
+
+export const BankIcon = () => (
+	<svg
+		width="48"
+		height="48"
+		viewBox="0 0 48 48"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<rect width="48" height="48" rx="24" fill="#F1FAF5" />
+		<path
+			d="M24 33V24.75M27.75 33V24.75M20.25 33V24.75M15 21L24 15L33 21M31.5 33V22.332C29.0189 21.9436 26.5113 21.749 24 21.75C21.449 21.75 18.944 21.95 16.5 22.332V33M15 33H33M24 18.75H24.008V18.758H24V18.75Z"
+			stroke="#39BD78"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</svg>
+);

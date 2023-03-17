@@ -1,14 +1,71 @@
 .CampaignDetails {
 	padding-bottom: 41px;
 	&__hero {
-		padding: 41px 0;
-		padding-bottom: 30px;
+		margin: 41px 0;
+		margin-bottom: 12px;
 	}
 
 	&__rest {
-		padding: 0 calc(5.83vw + 40px);
+		padding: 0 5.83vw;
+		padding-left: calc(5.83vw + 40px);
 
 		display: grid;
 		grid-template-columns: 63.26fr 36.74fr;
+		gap: 26px;
+
+		.sideCards {
+			padding-top: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			gap: 27px;
+
+			.accountDets {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 1rem;
+
+				& > div {
+					display: flex;
+					flex-direction: column;
+					align-items: stretch;
+					gap: 13px;
+
+					& > :first-child {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 16px;
+						color: rgba(18, 21, 40, 0.6);
+					}
+
+					& > :nth-child(2) {
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 16px;
+						color: #363641;
+					}
+
+					& > :last-child {
+						font-weight: 700;
+						font-size: 12px;
+						line-height: 16px;
+						color: #363641;
+
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						gap: 4px;
+					}
+				}
+			}
+
+			.contributions {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				gap: 1.5rem;
+			}
+		}
 	}
 }

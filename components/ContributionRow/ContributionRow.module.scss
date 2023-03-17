@@ -1,0 +1,30 @@
+.ContributionRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	padding: 6px 0;
+
+	&__email {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 10px;
+		color: rgba(18, 21, 40, 0.6);
+		margin-bottom: 1rem;
+	}
+
+	&__amount {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 10px;
+		color: #328be0;
+	}
+
+	&__time {
+		margin-left: auto;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 10px;
+		color: rgba(18, 21, 40, 0.6);
+	}
+}

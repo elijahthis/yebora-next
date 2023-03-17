@@ -1,11 +1,16 @@
 import AboutCampaign from "@/components/CampaignDetailsComponents/AboutCampaign";
 import CampaignHero from "@/components/CampaignHero";
+import GreyCard from "@/components/GreyCard";
 import MUITabs from "@/components/MUITabs";
 import TabPanel from "@/components/MUITabs/TabPanel";
+import { AiOutlineLink } from "react-icons/ai";
+import { BankIcon } from "@/components/svgs";
 import TitleNav from "@/components/TitleNav";
 import HomeLayout from "@/layouts/HomeLayout";
 import { ReactNode, useState } from "react";
 import styles from "../styles/CampaignDetails.module.scss";
+import ProfileImage from "@/components/ProfileImage";
+import ContributionRow from "@/components/ContributionRow";
 
 const CampaignDetails = () => {
 	const campaignData: {
@@ -45,6 +50,27 @@ const CampaignDetails = () => {
 		{ label: "Document", value: "document", component: <></> },
 	];
 
+	const contributionList = [
+		{
+			initials: "KJ",
+			email: "kingsleijeo@gmail.com",
+			amount: 500,
+			time: "2h ago",
+		},
+		{
+			initials: "BO",
+			email: "kingsleijeo@gmail.com",
+			amount: 500,
+			time: "2h ago",
+		},
+		{
+			initials: "MW",
+			email: "kingsleijeo@gmail.com",
+			amount: 500,
+			time: "2h ago",
+		},
+	];
+
 	const [value, setValue] = useState<number>(0);
 
 	return (
@@ -69,7 +95,28 @@ const CampaignDetails = () => {
 						</TabPanel>
 					))}
 				</div>
-				<div></div>
+				<div className={styles.sideCards}>
+					<GreyCard title="Account Details">
+						<div className={styles.accountDets}>
+							<BankIcon />
+							<div>
+								<p>LAPTOP FUNDS LTD</p>
+								<p>FIRSTBANK OF NIGERIA PLC </p>
+								<p>
+									3094827647
+									<AiOutlineLink color="#328BE0" size={18} />
+								</p>
+							</div>
+						</div>
+					</GreyCard>
+					<GreyCard title="Contributions">
+						<div className={styles.contributions}>
+							{contributionList.map((contribItem) => (
+								<ContributionRow data={contribItem} />
+							))}
+						</div>
+					</GreyCard>
+				</div>
 			</div>
 		</main>
 	);
