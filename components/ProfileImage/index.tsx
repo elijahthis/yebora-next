@@ -6,7 +6,7 @@ interface ProfileImageProps {
 	alt: string;
 	width: number;
 	height: number;
-	style: any;
+	style?: any;
 }
 
 const ProfileImage = ({

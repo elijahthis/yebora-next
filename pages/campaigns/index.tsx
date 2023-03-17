@@ -8,7 +8,7 @@ import { EmptyCampaignIcon } from "@/components/svgs";
 import HomeLayout from "@/layouts/HomeLayout";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
-import styles from "./styles/AllCampaigns.module.scss";
+import styles from "../styles/AllCampaigns.module.scss";
 
 const AllCampaigns = () => {
 	const router = useRouter();

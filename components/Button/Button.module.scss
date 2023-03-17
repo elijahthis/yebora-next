@@ -3,36 +3,61 @@
 	color: #ffffff;
 	border: 0;
 
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 106.4%;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+
 	background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
 	font-family: "Poppins";
+	padding: 13.5px 30.5px;
+	border-radius: 31px;
+	z-index: 1;
 
 	&--primary {
-		padding: 13.5px 30.5px;
-		border-radius: 31px;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 21px;
 	}
 
 	&--fullWidth {
 		width: 100%;
 		padding: 1rem;
 		border-radius: 20px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 106.4%;
 	}
 
 	&--outline {
-		padding: 13.5px 30.5px;
-		border-radius: 31px;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 21px;
-
 		color: #23262f;
 		border: 2px solid #e6e8ec;
 		background: transparent;
+	}
+
+	&--blueOutline {
+		background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
+		color: #328be0;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			left: 1px;
+			background-color: white;
+			border-radius: 68px;
+			z-index: -1;
+		}
+		&::after {
+			content: attr(data-size);
+			font-weight: 400;
+			font-size: 13.7584px;
+			line-height: 13px;
+			background: linear-gradient(90deg, #1b75bc 25.1%, #29abe2 81.05%);
+			color: transparent;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+		}
 	}
 }
 

@@ -1,14 +1,16 @@
 import styles from "./Button.module.scss";
 import { BiLoaderAlt } from "react-icons/bi";
+import { ReactNode } from "react";
 
 interface ButtonProps {
-	children: JSX.Element | string;
+	children: ReactNode;
 	onClick?: () => void;
 	style?: any;
 	loading?: boolean;
 	disabled?: boolean;
 	type?: "button" | "submit" | "reset" | undefined;
-	variant?: "primary" | "fullWidth" | "outline";
+	variant?: "primary" | "fullWidth" | "outline" | "blueOutline";
+	dataSize?: ReactNode;
 }
 
 const Button = ({
@@ -19,6 +21,7 @@ const Button = ({
 	disabled = false,
 	type = "button",
 	variant = "primary",
+	dataSize = "",
 }: ButtonProps) => {
 	return (
 		<button
@@ -31,6 +34,7 @@ const Button = ({
 			style={style}
 			type={type}
 			disabled={disabled}
+			data-size={dataSize}
 		>
 			{loading ? <BiLoaderAlt className="btn-loader" /> : children}
 		</button>

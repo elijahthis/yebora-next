@@ -14,7 +14,7 @@ const Header = () => {
 
 	const headerLinks = [
 		{ title: "Overview", link: "/" },
-		{ title: "All Campaigns", link: "/all-campaigns" },
+		{ title: "All Campaigns", link: "/campaigns" },
 		{ title: "Pledges", link: "/pledges" },
 	];
 

@@ -54,7 +54,7 @@ const PledgeCard = ({ campaignData }: PledgeCardProps) => {
 				</p>
 			</div>
 			<div className={styles.PledgeCard__progress}>
-				<ProgressBar val={campaignData.progressPercent} />
+				<ProgressBar val={campaignData.progressPercent} height={6} />
 			</div>
 			<div className={styles.PledgeCard__moneyStuff}>
 				<p>

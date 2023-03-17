@@ -1,7 +1,9 @@
 import styles from "./CampaignCard.module.scss";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import { BiTimeFive } from "react-icons/bi";
 import ProgressBar from "../ProgressBar";
+import Tag from "../Tag";
 
 interface CampaignCardProps {
 	campaignData: {
@@ -17,8 +19,13 @@ interface CampaignCardProps {
 }
 
 const CampaignCard = ({ campaignData }: CampaignCardProps) => {
+	const router = useRouter();
+
 	return (
-		<div className={styles.CampaignCard}>
+		<div
+			className={styles.CampaignCard}
+			onClick={() => router.push("campaigns/1")}
+		>
 			<div className={styles.CampaignCard__image}>
 				<Image
 					src={campaignData.image}
@@ -28,24 +35,7 @@ const CampaignCard = ({ campaignData }: CampaignCardProps) => {
 				/>
 			</div>
 			<div className={styles.CampaignCard__tag}>
-				<p
-					style={{
-						color:
-							campaignData.type === "Celebration"
-								? "#B54708"
-								: campaignData.type === "Crowdfunding"
-								? "#175CD3"
-								: "#027A48",
-						backgroundColor:
-							campaignData.type === "Celebration"
-								? "#FFFAEB"
-								: campaignData.type === "Crowdfunding"
-								? "#EFF8FF"
-								: "#ECFDF3",
-					}}
-				>
-					{campaignData.type}
-				</p>
+				<Tag type={campaignData.type} />
 			</div>
 			<h5 className={styles.CampaignCard__title}>{campaignData.title}</h5>
 			<p className={styles.CampaignCard__desc}>{campaignData.description}</p>
@@ -58,7 +48,7 @@ const CampaignCard = ({ campaignData }: CampaignCardProps) => {
 				</p>
 			</div>
 			<div className={styles.CampaignCard__progress}>
-				<ProgressBar val={campaignData.progressPercent} />
+				<ProgressBar val={campaignData.progressPercent} height={6} />
 			</div>
 			<div className={styles.CampaignCard__spaceBetween}>
 				<div className={styles.CampaignCard__time}>
