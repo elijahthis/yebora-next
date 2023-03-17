@@ -1,3 +1,4 @@
+import AboutCampaign from "@/components/CampaignDetailsComponents/AboutCampaign";
 import CampaignHero from "@/components/CampaignHero";
 import MUITabs from "@/components/MUITabs";
 import TabPanel from "@/components/MUITabs/TabPanel";
@@ -29,9 +30,18 @@ const CampaignDetails = () => {
 	};
 
 	const tabList = [
-		{ label: "About Campaign", value: "about-campaign", component: <></> },
-		{ label: "Comments", value: "comments", component: <></> },
-		{ label: "Notice Board", value: "notice-board", component: <></> },
+		{
+			label: "About Campaign",
+			value: "about-campaign",
+			component: <AboutCampaign />,
+		},
+		{ label: "Comments", value: "comments", component: <></>, unread: 5 },
+		{
+			label: "Notice Board",
+			value: "notice-board",
+			component: <></>,
+			unread: 0,
+		},
 		{ label: "Document", value: "document", component: <></> },
 	];
 
@@ -51,12 +61,15 @@ const CampaignDetails = () => {
 				<CampaignHero data={campaignData} />
 			</div>
 			<div className={styles.CampaignDetails__rest}>
-				<MUITabs tabList={tabList} value={value} setValue={setValue} />
-				{tabList.map((item, ind) => (
-					<TabPanel value={value} index={ind}>
-						{item.component}
-					</TabPanel>
-				))}
+				<div>
+					<MUITabs tabList={tabList} value={value} setValue={setValue} />
+					{tabList.map((item, ind) => (
+						<TabPanel value={value} index={ind}>
+							{item.component}
+						</TabPanel>
+					))}
+				</div>
+				<div></div>
 			</div>
 		</main>
 	);

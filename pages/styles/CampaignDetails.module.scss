@@ -6,6 +6,9 @@
 	}
 
 	&__rest {
-		padding: 0 5.83vw;
+		padding: 0 calc(5.83vw + 40px);
+
+		display: grid;
+		grid-template-columns: 63.26fr 36.74fr;
 	}
 }

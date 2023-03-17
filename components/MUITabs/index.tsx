@@ -1,9 +1,10 @@
 import { Box, Tab, Tabs } from "@mui/material";
 import { Dispatch, SetStateAction, useState } from "react";
 import TabPanel from "./TabPanel";
+import styles from "./MUITabs.module.scss";
 
 interface MUITabsProps {
-	tabList: { label: string; value: string }[];
+	tabList: { label: string; value: string; unread?: number }[];
 	value: number;
 	setValue: Dispatch<SetStateAction<number>>;
 }
@@ -15,7 +16,7 @@ const MUITabs = ({ tabList, value, setValue }: MUITabsProps) => {
 
 	return (
 		<>
-			<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+			<Box>
 				<Tabs
 					value={value}
 					onChange={handleChange}
@@ -34,7 +35,16 @@ const MUITabs = ({ tabList, value, setValue }: MUITabsProps) => {
 				>
 					{tabList.map((tabItem, ind) => (
 						<Tab
-							label={tabItem.label}
+							label={
+								<div className={styles.tabDiv}>
+									{tabItem.label}
+									{tabItem.unread !== undefined ? (
+										<span>{tabItem.unread}</span>
+									) : (
+										<></>
+									)}
+								</div>
+							}
 							{...a11yProps(ind)}
 							sx={{
 								fontFamily: "Nunito",
