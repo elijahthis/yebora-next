@@ -11,6 +11,7 @@ import { ReactNode, useState } from "react";
 import styles from "../styles/CampaignDetails.module.scss";
 import ProfileImage from "@/components/ProfileImage";
 import ContributionRow from "@/components/ContributionRow";
+import CommentSection from "@/components/CampaignDetailsComponents/CommentSection";
 
 const CampaignDetails = () => {
 	const campaignData: {
@@ -40,7 +41,12 @@ const CampaignDetails = () => {
 			value: "about-campaign",
 			component: <AboutCampaign />,
 		},
-		{ label: "Comments", value: "comments", component: <></>, unread: 5 },
+		{
+			label: "Comments",
+			value: "comments",
+			component: <CommentSection />,
+			unread: 5,
+		},
 		{
 			label: "Notice Board",
 			value: "notice-board",
