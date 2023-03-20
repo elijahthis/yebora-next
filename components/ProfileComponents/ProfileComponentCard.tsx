@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import styles from "./ProfileComponents.module.scss";
 
 interface ProfileComponentCardProps {
 	title: string;
@@ -10,9 +11,9 @@ const ProfileComponentCard = ({
 	children,
 }: ProfileComponentCardProps) => {
 	return (
-		<div>
-			<div>{title}</div>
-			<div>{children}</div>
+		<div className={styles.ProfileComponentCard}>
+			<div className={styles.ProfileComponentCard__title}>{title}</div>
+			<div className={styles.ProfileComponentCard__body}>{children}</div>
 		</div>
 	);
 };

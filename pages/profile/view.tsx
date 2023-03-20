@@ -1,5 +1,7 @@
 import Button from "@/components/Button";
 import MiniSidebar from "@/components/MiniSidebar";
+import Compliance from "@/components/ProfileComponents/Compliance";
+import ProfileDetails from "@/components/ProfileComponents/ProfileDetails";
 import { MessagesIcon } from "@/components/svgs";
 import TitleNav from "@/components/TitleNav";
 import UploadImage from "@/components/UploadImage";
@@ -9,9 +11,9 @@ import styles from "../styles/MyProfilePage.module.scss";
 
 const MyProfilePage = () => {
 	const sideList = [
-		{ label: "Profile Details", component: <></> },
+		{ label: "Profile Details", component: <ProfileDetails /> },
 		{ label: "Account Settings", component: <></> },
-		{ label: "Compliance", component: <></> },
+		{ label: "Compliance", component: <Compliance /> },
 		{ label: "Reward Points", component: <></> },
 		{ label: "FAQ", component: <></> },
 	];

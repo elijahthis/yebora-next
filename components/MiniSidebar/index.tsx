@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import styles from "./MiniSidebar.module.scss";
 import { BiChevronRight } from "react-icons/bi";
+import ProfileComponentCard from "../ProfileComponents/ProfileComponentCard";
 
 interface MiniSidebarProps {
 	sideList: { label: string; component: ReactNode }[];
@@ -25,7 +26,9 @@ const MiniSidebar = ({ sideList }: MiniSidebarProps) => {
 					</div>
 				))}
 			</div>
-			<div>{sideList[active].component}</div>
+			<ProfileComponentCard title={sideList[active].label}>
+				{sideList[active].component}
+			</ProfileComponentCard>
 		</section>
 	);
 };

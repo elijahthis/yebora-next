@@ -9,7 +9,7 @@ interface ButtonProps {
 	loading?: boolean;
 	disabled?: boolean;
 	type?: "button" | "submit" | "reset" | undefined;
-	variant?: "primary" | "fullWidth" | "outline" | "blueOutline";
+	variant?: "primary" | "fullWidth" | "outline" | "blueOutline" | "blueFill";
 	dataSize?: ReactNode;
 }
 

@@ -1,4 +1,8 @@
 .MiniSidebar {
+	display: grid;
+	grid-template-columns: 412px 1fr;
+	gap: 30px;
+
 	&__side {
 		max-width: 412px;
 

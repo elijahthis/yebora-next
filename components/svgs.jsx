@@ -1,14 +1,8 @@
 export const MailIcon = () => (
-	<svg
-		width="24"
-		height="24"
-		viewBox="0 0 24 24"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
-			stroke="#328BE0"
+			stroke="currentColor"
 			strokeWidth="1.5"
 			stroke-miterlimit="10"
 			strokeLinecap="round"
@@ -16,7 +10,7 @@ export const MailIcon = () => (
 		/>
 		<path
 			d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
-			stroke="#328BE0"
+			stroke="currentColor"
 			strokeWidth="1.5"
 			stroke-miterlimit="10"
 			strokeLinecap="round"
@@ -626,8 +620,8 @@ export const BankIcon = () => (
 		<path
 			d="M24 33V24.75M27.75 33V24.75M20.25 33V24.75M15 21L24 15L33 21M31.5 33V22.332C29.0189 21.9436 26.5113 21.749 24 21.75C21.449 21.75 18.944 21.95 16.5 22.332V33M15 33H33M24 18.75H24.008V18.758H24V18.75Z"
 			stroke="#39BD78"
-			stroke-width="1.5"
-			stroke-linecap="round"
+			strokeWidth="1.5"
+			strokeLinecap="round"
 			strokeLinejoin="round"
 		/>
 	</svg>
@@ -802,6 +796,64 @@ export const MessagesIcon = () => (
 		<path
 			d="M16.3 6.07C15.13 3.67 12.52 2 9.5 2C5.36 2 2 5.13 2 9C2 11.29 3.18 13.32 5 14.6L6.34 17.55C6.65 18.22 7.55 18.34 8.02 17.78L8.57 17.12L9.5 16C13.64 16 17 12.87 17 9C17 7.95 16.75 6.96 16.3 6.07ZM12 9.75H7C6.59 9.75 6.25 9.41 6.25 9C6.25 8.59 6.59 8.25 7 8.25H12C12.41 8.25 12.75 8.59 12.75 9C12.75 9.41 12.41 9.75 12 9.75Z"
 			fill="white"
+		/>
+	</svg>
+);
+
+export const ProfileIcon = () => (
+	<svg
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M12.1625 10.87C12.0625 10.86 11.9425 10.86 11.8325 10.87C9.4525 10.79 7.5625 8.84 7.5625 6.44C7.5625 3.99 9.5425 2 12.0025 2C14.4525 2 16.4425 3.99 16.4425 6.44C16.4325 8.84 14.5425 10.79 12.1625 10.87Z"
+			stroke="#787A8D"
+			strokeWidth="1.5"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		/>
+		<path
+			d="M7.15875 14.56C4.73875 16.18 4.73875 18.82 7.15875 20.43C9.90875 22.27 14.4188 22.27 17.1688 20.43C19.5888 18.81 19.5888 16.17 17.1688 14.56C14.4288 12.73 9.91875 12.73 7.15875 14.56Z"
+			stroke="#787A8D"
+			strokeWidth="1.5"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		/>
+	</svg>
+);
+
+export const UserPin = () => (
+	<svg
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M18 18.86H17.24C16.44 18.86 15.68 19.17 15.12 19.73L13.41 21.42C12.63 22.19 11.36 22.19 10.58 21.42L8.87 19.73C8.31 19.17 7.54 18.86 6.75 18.86H6C4.34 18.86 3 17.53 3 15.89V4.97C3 3.33 4.34 2 6 2H18C19.66 2 21 3.33 21 4.97V15.88C21 17.52 19.66 18.86 18 18.86Z"
+			stroke="#787A8D"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M12.0691 8.9498C12.0291 8.9498 11.9691 8.9498 11.9191 8.9498C10.8691 8.9098 10.0391 8.0598 10.0391 6.9998C10.0391 5.9198 10.9091 5.0498 11.9891 5.0498C13.0691 5.0498 13.9391 5.9298 13.9391 6.9998C13.9491 8.0598 13.1191 8.9198 12.0691 8.9498Z"
+			stroke="#787A8D"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M9.2475 11.96C7.9175 12.85 7.9175 14.3 9.2475 15.19C10.7575 16.2 13.2375 16.2 14.7475 15.19C16.0775 14.3 16.0775 12.85 14.7475 11.96C13.2375 10.96 10.7675 10.96 9.2475 11.96Z"
+			stroke="#787A8D"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</svg>
 );
