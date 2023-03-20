@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import MiniSidebar from "@/components/MiniSidebar";
 import { MessagesIcon } from "@/components/svgs";
 import TitleNav from "@/components/TitleNav";
 import UploadImage from "@/components/UploadImage";
@@ -7,6 +8,14 @@ import { ReactNode } from "react";
 import styles from "../styles/MyProfilePage.module.scss";
 
 const MyProfilePage = () => {
+	const sideList = [
+		{ label: "Profile Details", component: <></> },
+		{ label: "Account Settings", component: <></> },
+		{ label: "Compliance", component: <></> },
+		{ label: "Reward Points", component: <></> },
+		{ label: "FAQ", component: <></> },
+	];
+
 	return (
 		<main className={styles.MyProfilePage}>
 			<TitleNav variant="back" title="Profile" backLink="/" />
@@ -36,6 +45,9 @@ const MyProfilePage = () => {
 							Chat Support
 						</div>
 					</Button>
+				</div>
+				<div className={styles.bottom}>
+					<MiniSidebar sideList={sideList} />
 				</div>
 			</div>
 		</main>
