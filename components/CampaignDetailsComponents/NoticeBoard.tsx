@@ -28,8 +28,8 @@ const NoticeBoard = () => {
 
 	return (
 		<div className={styles.NoticeBoard}>
-			{noticeBoardList.map((noticeItem) => (
-				<div className={styles.noticeItem}>
+			{noticeBoardList.map((noticeItem, ind) => (
+				<div className={styles.noticeItem} key={ind}>
 					<div className={styles.noticeItem__icon}>
 						<WalletIcon />
 					</div>
