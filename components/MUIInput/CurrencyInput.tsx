@@ -52,8 +52,10 @@ const CurrencyInput = ({ placeholder }: CurrencyInputProps) => {
 					},
 				}}
 			>
-				{currencyList.map((item) => (
-					<MenuItem value={item}>{item}</MenuItem>
+				{currencyList.map((item, ind) => (
+					<MenuItem value={item} key={ind}>
+						{item}
+					</MenuItem>
 				))}
 			</Select>
 			<TextField

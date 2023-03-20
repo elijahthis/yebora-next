@@ -35,8 +35,8 @@ const CommentSection = () => {
 
 	return (
 		<section className={styles.CommentSection}>
-			{commentList.map((commentItem) => (
-				<CommentCard commentData={commentItem} />
+			{commentList.map((commentItem, ind) => (
+				<CommentCard commentData={commentItem} key={ind} />
 			))}
 		</section>
 	);

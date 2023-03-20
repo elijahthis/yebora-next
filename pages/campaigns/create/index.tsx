@@ -50,8 +50,8 @@ const CreateCampaign = () => {
 					<p>Select a campaign type to get started</p>
 				</div>
 				<div className={styles.cards}>
-					{campaignTypeList.map((typeItem) => (
-						<CampaignTypeCard cardData={typeItem} />
+					{campaignTypeList.map((typeItem, ind) => (
+						<CampaignTypeCard cardData={typeItem} key={ind} />
 					))}
 				</div>
 			</div>

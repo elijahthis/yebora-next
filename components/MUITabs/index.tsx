@@ -53,6 +53,7 @@ const MUITabs = ({ tabList, value, setValue }: MUITabsProps) => {
 								lineHeight: "21px",
 								padding: "1rem 3px",
 							}}
+							key={ind}
 						/>
 					))}
 				</Tabs>

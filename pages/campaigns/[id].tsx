@@ -12,6 +12,7 @@ import styles from "../styles/CampaignDetails.module.scss";
 import ProfileImage from "@/components/ProfileImage";
 import ContributionRow from "@/components/ContributionRow";
 import CommentSection from "@/components/CampaignDetailsComponents/CommentSection";
+import NoticeBoard from "@/components/CampaignDetailsComponents/Noticeboard";
 
 const CampaignDetails = () => {
 	const campaignData: {
@@ -50,7 +51,7 @@ const CampaignDetails = () => {
 		{
 			label: "Notice Board",
 			value: "notice-board",
-			component: <></>,
+			component: <NoticeBoard />,
 			unread: 0,
 		},
 		{ label: "Document", value: "document", component: <></> },
@@ -96,7 +97,7 @@ const CampaignDetails = () => {
 				<div>
 					<MUITabs tabList={tabList} value={value} setValue={setValue} />
 					{tabList.map((item, ind) => (
-						<TabPanel value={value} index={ind}>
+						<TabPanel value={value} index={ind} key={ind}>
 							{item.component}
 						</TabPanel>
 					))}
@@ -117,8 +118,8 @@ const CampaignDetails = () => {
 					</GreyCard>
 					<GreyCard title="Contributions">
 						<div className={styles.contributions}>
-							{contributionList.map((contribItem) => (
-								<ContributionRow data={contribItem} />
+							{contributionList.map((contribItem, ind) => (
+								<ContributionRow data={contribItem} key={ind} />
 							))}
 						</div>
 					</GreyCard>
