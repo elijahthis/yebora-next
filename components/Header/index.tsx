@@ -40,7 +40,10 @@ const Header = () => {
 				<div className={styles.Header__right__side}>
 					<BellIcon />
 					<div className={styles.line}></div>
-					<div className={styles.profileBit}>
+					<div
+						className={styles.profileBit}
+						onClick={() => router.push("/profile/view")}
+					>
 						<ProfileImage
 							url="/profileImg.jpeg"
 							alt="profile"
