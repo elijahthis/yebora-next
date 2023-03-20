@@ -13,6 +13,7 @@ import ProfileImage from "@/components/ProfileImage";
 import ContributionRow from "@/components/ContributionRow";
 import CommentSection from "@/components/CampaignDetailsComponents/CommentSection";
 import NoticeBoard from "@/components/CampaignDetailsComponents/Noticeboard";
+import Document from "@/components/CampaignDetailsComponents/Document";
 
 const CampaignDetails = () => {
 	const campaignData: {
@@ -54,7 +55,7 @@ const CampaignDetails = () => {
 			component: <NoticeBoard />,
 			unread: 0,
 		},
-		{ label: "Document", value: "document", component: <></> },
+		{ label: "Document", value: "document", component: <Document /> },
 	];
 
 	const contributionList = [
