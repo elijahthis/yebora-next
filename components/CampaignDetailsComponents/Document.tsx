@@ -7,8 +7,8 @@ const Document = () => {
 			<div>
 				{Array(5)
 					.fill(0)
-					.map((item) => (
-						<div>
+					.map((item, ind) => (
+						<div key={ind}>
 							<DocIcon />
 							<p>Transcripts.doc</p>
 							<div>Download</div>
