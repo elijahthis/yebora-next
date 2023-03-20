@@ -1,4 +1,5 @@
 import { DocIcon } from "../svgs";
+import { BiArrowToBottom } from "react-icons/bi";
 
 const Document = () => {
 	return (
@@ -11,7 +12,10 @@ const Document = () => {
 						<div key={ind}>
 							<DocIcon />
 							<p>Transcripts.doc</p>
-							<div>Download</div>
+							<div>
+								<BiArrowToBottom />
+								Download
+							</div>
 						</div>
 					))}
 			</div>

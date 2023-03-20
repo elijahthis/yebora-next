@@ -12,7 +12,7 @@ import styles from "../styles/CampaignDetails.module.scss";
 import ProfileImage from "@/components/ProfileImage";
 import ContributionRow from "@/components/ContributionRow";
 import CommentSection from "@/components/CampaignDetailsComponents/CommentSection";
-import NoticeBoard from "@/components/CampaignDetailsComponents/Noticeboard";
+import NoticeBoard from "@/components/CampaignDetailsComponents/NoticeBoard";
 import Document from "@/components/CampaignDetailsComponents/Document";
 
 const CampaignDetails = () => {
