@@ -86,8 +86,8 @@ const AccountSettings = () => {
 
 	return (
 		<div className={styles.AccountSettings}>
-			{dataList.map((item) => (
-				<div className={styles.AccountSettings__item}>
+			{dataList.map((item, ind) => (
+				<div className={styles.AccountSettings__item} key={ind}>
 					<div className={styles.AccountSettings__item__left}>
 						<div className={styles.icon}>{item.icon}</div>
 						<div>

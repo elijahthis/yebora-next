@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import MiniSidebar from "@/components/MiniSidebar";
 import AccountSettings from "@/components/ProfileComponents/AccountSettings";
 import Compliance from "@/components/ProfileComponents/Compliance";
+import FAQ from "@/components/ProfileComponents/FAQ";
 import ProfileDetails from "@/components/ProfileComponents/ProfileDetails";
 import RewardPoints from "@/components/ProfileComponents/RewardPoints";
 import { MessagesIcon } from "@/components/svgs";
@@ -17,7 +18,7 @@ const MyProfilePage = () => {
 		{ label: "Account Settings", component: <AccountSettings /> },
 		{ label: "Compliance", component: <Compliance /> },
 		{ label: "Reward Points", component: <RewardPoints /> },
-		{ label: "FAQ", component: <></> },
+		{ label: "FAQ", component: <FAQ /> },
 	];
 
 	return (

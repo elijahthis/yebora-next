@@ -30,8 +30,10 @@ const MUISelect = ({ optionsList, label }: MUISelectProps) => {
 				}}
 				IconComponent={(props) => <FiChevronDown {...props} />}
 			>
-				{optionsList.map((optionItem) => (
-					<MenuItem value={optionItem.value}>{optionItem.label}</MenuItem>
+				{optionsList.map((optionItem, ind) => (
+					<MenuItem value={optionItem.value} key={ind}>
+						{optionItem.label}
+					</MenuItem>
 				))}
 			</Select>
 		</div>
