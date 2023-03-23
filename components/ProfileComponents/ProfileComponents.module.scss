@@ -253,5 +253,12 @@
 			color: #328be0;
 			cursor: pointer;
 		}
+
+		.optionLabel {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 9px;
+		}
 	}
 }

@@ -3,18 +3,68 @@ import { HiOutlineCurrencyDollar, HiOutlineBell } from "react-icons/hi";
 import { KeyIcon, SecurityIcon } from "../svgs";
 import styles from "./ProfileComponents.module.scss";
 import MUIToggle from "../MUIToggle";
+import MUISelect from "../MUISelect";
 
 const AccountSettings = () => {
 	const dataList = [
 		{
 			icon: <VscGlobe />,
 			label: "Set Language",
-			right: <></>,
+			right: (
+				<MUISelect
+					optionsList={[
+						{
+							label: (
+								<div className="optionLabel">
+									<span>🇺🇸</span>
+									<span>English US</span>
+								</div>
+							),
+							value: "English (US)",
+						},
+						{
+							label: (
+								<div className="optionLabel">
+									<span>🇫🇷</span>
+									<span>French</span>
+								</div>
+							),
+							value: "French",
+						},
+						{
+							label: (
+								<div className="optionLabel">
+									<span>🇪🇸</span>
+									<span>Spanish</span>
+								</div>
+							),
+							value: "Spanish",
+						},
+					]}
+				/>
+			),
 		},
 		{
 			icon: <HiOutlineCurrencyDollar />,
 			label: "Set Currency",
-			right: <></>,
+			right: (
+				<MUISelect
+					optionsList={[
+						{
+							label: <div className="optionLabel">USD ($)</div>,
+							value: "USD",
+						},
+						{
+							label: <div className="optionLabel">NGN (₦)</div>,
+							value: "NGN",
+						},
+						{
+							label: <div className="optionLabel">GHC (GH₵)</div>,
+							value: "GHC",
+						},
+					]}
+				/>
+			),
 		},
 		{
 			icon: <KeyIcon />,
