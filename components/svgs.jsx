@@ -857,3 +857,71 @@ export const UserPin = () => (
 		/>
 	</svg>
 );
+
+export const KeyIcon = () => (
+	<svg
+		width="24"
+		height="25"
+		viewBox="0 0 24 25"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M19.7926 15.4303C17.7326 17.4803 14.7826 18.1103 12.1926 17.3003L7.48259 22.0003C7.14259 22.3503 6.47259 22.5603 5.99259 22.4903L3.81259 22.1903C3.09259 22.0903 2.42259 21.4103 2.31259 20.6903L2.01259 18.5103C1.94259 18.0303 2.17259 17.3603 2.50259 17.0203L7.20259 12.3203C6.40259 9.72031 7.02259 6.77031 9.08259 4.72031C12.0326 1.77031 16.8226 1.77031 19.7826 4.72031C22.7426 7.67031 22.7426 12.4803 19.7926 15.4303Z"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M6.89062 17.9902L9.19062 20.2902"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M14.5 11.5C15.3284 11.5 16 10.8284 16 10C16 9.17157 15.3284 8.5 14.5 8.5C13.6716 8.5 13 9.17157 13 10C13 10.8284 13.6716 11.5 14.5 11.5Z"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</svg>
+);
+
+export const SecurityIcon = () => (
+	<svg
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M20.9138 11.1203C20.9138 16.0103 17.3638 20.5903 12.5138 21.9303C12.1838 22.0203 11.8237 22.0203 11.4937 21.9303C6.64374 20.5903 3.09375 16.0103 3.09375 11.1203V6.73028C3.09375 5.91028 3.71376 4.98028 4.48376 4.67028L10.0537 2.39031C11.3037 1.88031 12.7137 1.88031 13.9637 2.39031L19.5338 4.67028C20.2938 4.98028 20.9238 5.91028 20.9238 6.73028L20.9138 11.1203Z"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M12 12.5C13.1046 12.5 14 11.6046 14 10.5C14 9.39543 13.1046 8.5 12 8.5C10.8954 8.5 10 9.39543 10 10.5C10 11.6046 10.8954 12.5 12 12.5Z"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M12 12.5V15.5"
+			stroke="#4E5D78"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</svg>
+);

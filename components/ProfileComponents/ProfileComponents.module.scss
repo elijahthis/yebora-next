@@ -102,6 +102,11 @@
 }
 
 .Compliance {
+	background: #fefefe;
+	border: 1px solid #f3f3f5;
+	border-radius: 12px;
+	padding: 1.5rem;
+
 	&__title {
 		font-family: "Open Sans";
 		font-style: normal;
@@ -138,6 +143,13 @@
 	flex-direction: column;
 	align-items: center;
 
+	background: #ffffff;
+	border: 1px solid #f3f3f5;
+	box-shadow: -5px -5px 100px -100px rgba(0, 0, 0, 0.03);
+	border-radius: 12px;
+	padding: 1rem;
+	padding-bottom: 37px;
+
 	img {
 		margin-bottom: 17.1px;
 	}
@@ -167,9 +179,79 @@
 		line-height: 16px;
 		color: #363641;
 		margin-bottom: 17px;
+		max-width: 282px;
+		text-align: center;
 	}
 
 	button {
 		width: 268px;
+	}
+}
+
+.AccountSettings {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.5rem;
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 98px;
+
+		background: #fefefe;
+		border: 1px solid #f3f3f5;
+		border-radius: 12px;
+
+		padding: 1.5rem;
+
+		&__left {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		.icon {
+			width: 40px;
+			height: 40px;
+			background: #fafbfc;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+
+			svg {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		.label {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			color: #363641;
+		}
+
+		.desc {
+			font-family: "Nunito";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #363641;
+		}
+
+		.blueLink {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 16px;
+			color: #328be0;
+			cursor: pointer;
+		}
 	}
 }

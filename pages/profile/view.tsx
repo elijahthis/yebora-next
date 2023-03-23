@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import MiniSidebar from "@/components/MiniSidebar";
+import AccountSettings from "@/components/ProfileComponents/AccountSettings";
 import Compliance from "@/components/ProfileComponents/Compliance";
 import ProfileDetails from "@/components/ProfileComponents/ProfileDetails";
 import RewardPoints from "@/components/ProfileComponents/RewardPoints";
@@ -13,7 +14,7 @@ import styles from "../styles/MyProfilePage.module.scss";
 const MyProfilePage = () => {
 	const sideList = [
 		{ label: "Profile Details", component: <ProfileDetails /> },
-		{ label: "Account Settings", component: <></> },
+		{ label: "Account Settings", component: <AccountSettings /> },
 		{ label: "Compliance", component: <Compliance /> },
 		{ label: "Reward Points", component: <RewardPoints /> },
 		{ label: "FAQ", component: <></> },
