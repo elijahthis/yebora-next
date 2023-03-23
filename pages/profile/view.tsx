@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import MiniSidebar from "@/components/MiniSidebar";
 import Compliance from "@/components/ProfileComponents/Compliance";
 import ProfileDetails from "@/components/ProfileComponents/ProfileDetails";
+import RewardPoints from "@/components/ProfileComponents/RewardPoints";
 import { MessagesIcon } from "@/components/svgs";
 import TitleNav from "@/components/TitleNav";
 import UploadImage from "@/components/UploadImage";
@@ -14,7 +15,7 @@ const MyProfilePage = () => {
 		{ label: "Profile Details", component: <ProfileDetails /> },
 		{ label: "Account Settings", component: <></> },
 		{ label: "Compliance", component: <Compliance /> },
-		{ label: "Reward Points", component: <></> },
+		{ label: "Reward Points", component: <RewardPoints /> },
 		{ label: "FAQ", component: <></> },
 	];
 
