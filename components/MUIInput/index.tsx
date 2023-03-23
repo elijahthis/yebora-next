@@ -56,6 +56,9 @@ const MUIInput = ({
 							"& .MuiOutlinedInput-notchedOutline": {
 								borderColor: "#EBF1F5",
 							},
+							input: {
+								fontFamily: "Nunito",
+							},
 						}}
 						InputProps={InputProps}
 					/>
@@ -130,6 +133,7 @@ const MUIInput = ({
 							resize: "none",
 							padding: "16.5px 14px",
 						}}
+						value={value}
 					/>
 				);
 

@@ -1,15 +1,41 @@
+import Button from "@/components/Button";
+import MUICheckBox from "@/components/MUICheckBox";
+import MUIInput from "@/components/MUIInput";
 import MUISelect from "@/components/MUISelect";
 import { DocIcon } from "@/components/svgs";
 import WhiteCardSection from "@/components/WhiteCardSection";
 import MidCardLayout from "@/layouts/MidCardLayout";
 import { ReactNode } from "react";
 import styles from "../styles/CampaignSettings.module.scss";
+import { RiErrorWarningLine } from "react-icons/ri";
 
 const CampaignSettings = () => {
+	const paymentOptions = ["Paystack", "Flutterwave", "FIncra", "Bank Transfer"];
+
 	return (
 		<main className={styles.CampaignSettings}>
 			<WhiteCardSection>
-				<h3>Campaign details</h3>
+				<form action="">
+					<div className={styles.spaceBtwn}>
+						<h3>Campaign details</h3>
+						<Button variant="blueFill">Update</Button>
+					</div>
+					<div className={styles.Inputs}>
+						<MUIInput
+							variant="text"
+							showLabel={true}
+							label="Campaign Title"
+							value="Laptops for young school children"
+						/>
+						<MUIInput
+							variant="textarea"
+							showLabel={true}
+							label="Event Description"
+							placeholder="Enter a description..."
+							value="The Project for Awesome is a once-a-year charity event that combines community-created videos promoting nonprofits, a 48 hour livestream with celebrity guests & charities. John & Hank, along with a number of special guests, host a 48-hour continuous livestream to feature videos, announce new perks, put peanut butter on their faces, throw confetti, and do their happy dances. You truly never know what will happen, so tune in, join the party, and help us decrease world suck!"
+						/>
+					</div>
+				</form>
 			</WhiteCardSection>
 			<WhiteCardSection>
 				<h3>Rules</h3>
@@ -22,6 +48,28 @@ const CampaignSettings = () => {
 							{ label: "3", value: 3 },
 						]}
 					/>
+				</div>
+			</WhiteCardSection>
+			<WhiteCardSection>
+				<h3>Payment Method</h3>
+				<p className={styles.desc}>
+					These are the available payment options you can received funds from
+				</p>
+				<div className={styles.paymentOptions}>
+					{paymentOptions.map((item, ind) => (
+						<div key={ind} className={styles.paymentOptions__item}>
+							<MUICheckBox />
+							<span>{item}</span>
+						</div>
+					))}
+				</div>
+				<div className={styles.transferInfo}>
+					<RiErrorWarningLine />
+					<p>
+						<span>BANK TRANSFER:</span> You can still receive money from the
+						generated account but the number will no longer be visible to the
+						public
+					</p>
 				</div>
 			</WhiteCardSection>
 			<WhiteCardSection>

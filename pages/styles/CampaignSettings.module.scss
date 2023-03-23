@@ -4,6 +4,14 @@
 	align-items: stretch;
 	gap: 1.5rem;
 
+	.Inputs {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1.5rem;
+		margin-top: 36px;
+	}
+
 	.spaceBtwn {
 		display: flex;
 		flex-direction: row;
@@ -61,6 +69,51 @@
 				width: 28px;
 				height: 30px;
 			}
+		}
+	}
+
+	.paymentOptions {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 5px;
+		margin-top: 24.5px;
+		margin-bottom: 20.5px;
+
+		&__item {
+			background: #ffffff;
+			border: 1px solid #f3f3f5;
+			border-radius: 10px;
+			padding: 6.5px 0;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 21px;
+			letter-spacing: 0.0162em;
+		}
+	}
+
+	.transferInfo {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 5.5px;
+
+		font-family: "Nunito";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+
+		background: #fef4e1;
+		padding: 5px 5.5px;
+		color: #cf8a04;
+
+		span {
+			font-weight: 700;
+		}
+
+		svg {
+			color: #f9b32e;
 		}
 	}
 }
