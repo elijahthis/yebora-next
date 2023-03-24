@@ -69,7 +69,9 @@ export default function Home() {
 		<div className={styles.Home}>
 			<div className={styles.Home__top}>
 				<div>
-					<h3>Welcome, Manuel Chucho! </h3>
+					<h3>
+						<span className={styles.welcome}>Welcome</span>, <span className={styles.firstName}>Manuel</span> Chucho!{" "}
+					</h3>
 					<p>Let’s build a community filled with hope</p>
 				</div>
 				<Button

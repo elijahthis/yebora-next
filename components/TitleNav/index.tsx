@@ -2,12 +2,14 @@ import styles from "./TitleNav.module.scss";
 import { BiChevronRight } from "react-icons/bi";
 import { useRouter } from "next/router";
 import BackButton from "../BackButton";
+import Button from "../Button";
 
 interface TitleNavProps {
 	title: string;
-	variant: "breadcrumb" | "back";
+	variant: "breadcrumb" | "back" | "button";
 	backLink?: string;
 	breadCrumbArray?: { label: string; link: string }[];
+	buttonObj?: { label: string; action: () => void };
 }
 
 const TitleNav = ({
@@ -15,6 +17,7 @@ const TitleNav = ({
 	variant,
 	backLink,
 	breadCrumbArray,
+	buttonObj,
 }: TitleNavProps) => {
 	const router = useRouter();
 
@@ -44,6 +47,9 @@ const TitleNav = ({
 				</div>
 			)}
 			{variant === "back" && <BackButton link={backLink ?? "/"} />}
+			{variant === "button" && buttonObj && (
+				<Button onClick={buttonObj.action}>{buttonObj.label}</Button>
+			)}
 		</div>
 	);
 };

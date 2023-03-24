@@ -11,6 +11,7 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 14px;
+	width: 100%;
 
 	&__icon {
 		width: 54.34px;
@@ -37,5 +38,20 @@
 		font-size: 14px;
 		line-height: 19px;
 		color: #bdbdbd;
+	}
+}
+
+@media (max-width: 768px) {
+	.DashCard {
+		// background: #242424;
+
+		border-radius: 12px;
+		color: #ffffff;
+
+		padding: 12px 15px 8px 15px;
+
+		&__icon {
+			display: none;
+		}
 	}
 }
