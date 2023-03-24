@@ -3,3 +3,11 @@
 		padding-top: 85px;
 	}
 }
+
+@media (max-width: 768px) {
+	.HomeLayout {
+		&__body {
+			padding-bottom: 85px;
+		}
+	}
+}
