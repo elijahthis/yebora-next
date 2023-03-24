@@ -1,4 +1,5 @@
 import Analytics from "@/components/AnalyticsComponents/Analytics";
+import NoticeBoard from "@/components/CampaignDetailsComponents/NoticeBoard";
 import RoundTabs from "@/components/RoundTabs";
 import TitleNav from "@/components/TitleNav";
 import HomeLayout from "@/layouts/HomeLayout";
@@ -20,7 +21,7 @@ const CampaignAnalytics = () => {
 				return <Analytics />;
 				break;
 			case 3:
-				return <Analytics />;
+				return <NoticeBoard />;
 				break;
 			case 4:
 				return <Analytics />;
