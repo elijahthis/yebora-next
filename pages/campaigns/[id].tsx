@@ -14,6 +14,8 @@ import ContributionRow from "@/components/ContributionRow";
 import CommentSection from "@/components/CampaignDetailsComponents/CommentSection";
 import NoticeBoard from "@/components/CampaignDetailsComponents/NoticeBoard";
 import Document from "@/components/CampaignDetailsComponents/Document";
+import AccountCard from "@/components/AccountCard";
+import ContributionCard from "@/components/ContributionCard";
 
 const CampaignDetails = () => {
 	const campaignData: {
@@ -104,26 +106,8 @@ const CampaignDetails = () => {
 					))}
 				</div>
 				<div className={styles.sideCards}>
-					<GreyCard title="Account Details">
-						<div className={styles.accountDets}>
-							<BankIcon />
-							<div>
-								<p>LAPTOP FUNDS LTD</p>
-								<p>FIRSTBANK OF NIGERIA PLC </p>
-								<p>
-									3094827647
-									<AiOutlineLink color="#328BE0" size={18} />
-								</p>
-							</div>
-						</div>
-					</GreyCard>
-					<GreyCard title="Contributions">
-						<div className={styles.contributions}>
-							{contributionList.map((contribItem, ind) => (
-								<ContributionRow data={contribItem} key={ind} />
-							))}
-						</div>
-					</GreyCard>
+					<AccountCard />
+					<ContributionCard />
 				</div>
 			</div>
 		</main>
