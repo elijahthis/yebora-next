@@ -85,4 +85,38 @@
 }
 
 @media (max-width: 768px) {
+	.Header {
+		padding: 1.5rem 17px;
+		&__right {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 4.93vw;
+
+			&__side {
+				gap: 12px;
+
+				.profileBit {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 0.5rem;
+					color: #4e5d78;
+
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 21px;
+					font-family: "Poppins";
+					cursor: pointer;
+
+					p {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.headerLinks {
+		display: none;
+	}
 }
