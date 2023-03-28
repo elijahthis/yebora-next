@@ -30,3 +30,39 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.Analytics {
+		&__cards {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+			gap: 20px;
+		}
+
+		&__rest {
+			margin-top: 98px;
+
+			h3 {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&__grid {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			gap: 26px;
+
+			.leftChart {
+				height: 100%;
+			}
+
+			.sideCards {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				gap: 27px;
+			}
+		}
+	}
+}

@@ -42,3 +42,55 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.MiniSidebar {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 30px;
+
+		&__side {
+			max-width: unset;
+			display: flex;
+			width: 100%;
+			overflow-x: auto;
+
+			& > :first-child {
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+			& > :last-child {
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+
+			&__item {
+				padding-top: 21px;
+				padding-bottom: 17px;
+				padding-left: 28px;
+				padding-right: 24px;
+				border: 1px solid #e9e9eb;
+
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 18px;
+				color: #121528;
+
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 1rem;
+				justify-content: space-between;
+				cursor: pointer;
+				min-width: max-content;
+
+				&--active {
+					color: #39bd78;
+				}
+			}
+		}
+	}
+}
