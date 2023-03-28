@@ -21,3 +21,26 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.MidCardLayout {
+		&__titleNav {
+			margin-top: 85px;
+		}
+
+		&__body {
+			background: #ffffff;
+			padding: 0;
+			padding-bottom: 32px;
+			.WhiteCard {
+				background: #ffffff;
+
+				box-shadow: -5px -5px 100px -100px rgba(0, 0, 0, 0.03),
+					5px 5px 100px 10px rgba(0, 0, 0, 0.03);
+				border-radius: 12px;
+
+				padding: 32px 20px;
+			}
+		}
+	}
+}

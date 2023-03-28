@@ -30,3 +30,41 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.CreateCampaign {
+		&__body {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			gap: 23px;
+
+			padding: 24px 20px;
+
+			.titleDesc {
+				h2 {
+					font-weight: 600;
+					line-height: 32px;
+					text-align: left;
+					margin-bottom: 0.25rem;
+					color: #328be0;
+				}
+				p {
+					text-align: left;
+					font-family: "Inter";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 24px;
+					color: #121528;
+				}
+			}
+
+			.cards {
+				display: grid;
+				grid-template-columns: unset;
+				grid-template-rows: repeat(3, 1fr);
+				gap: 20px;
+			}
+		}
+	}
+}
