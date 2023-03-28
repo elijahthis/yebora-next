@@ -7,8 +7,18 @@
 	align-items: center;
 	justify-content: space-between;
 
-	h3 {
-		font-weight: 600;
+	&__title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.75rem;
+
+		h3 {
+			font-weight: 600;
+		}
+		svg {
+			display: none;
+		}
 	}
 
 	&__breadCrumb {
@@ -29,6 +39,24 @@
 				color: #353945;
 				cursor: default;
 			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.TitleNav {
+		padding: 34px 20px;
+		background: #ffffff;
+
+		&__title {
+			svg {
+				display: inline;
+				cursor: pointer;
+			}
+		}
+
+		&__rightSide {
+			display: none;
 		}
 	}
 }

@@ -31,6 +31,9 @@ const MUITabs = ({ tabList, value, setValue }: MUITabsProps) => {
 						".MuiTabs-indicator": {
 							backgroundColor: "#328be0",
 						},
+						".MuiTabs-scroller": {
+							overflowX: "auto !important",
+						},
 					}}
 				>
 					{tabList.map((tabItem, ind) => (
